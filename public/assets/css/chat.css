@@ -4,10 +4,9 @@
 }
 body {
   /* font-family: "Vibur", cursive; */
-  background-image: url("http://www.pixxelfactory.net/jInvertScroll/images/horizon.png");
-  font-family: "Lato", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-size: 0.9375rem;
+  background-image: url("../images/moregrass.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
 }
 
 

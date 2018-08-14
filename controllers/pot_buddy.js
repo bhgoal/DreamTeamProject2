@@ -105,7 +105,6 @@ router.post("/api/my-garden", function(req, res) {
 // get route -> plants
 router.get("/plants", function (req, res) {
 
-
   // .findAll sequelize function
   db.Plants.findAll({})
     // use promise method to pass the plants...
@@ -114,6 +113,21 @@ router.get("/plants", function (req, res) {
       // into the main index, updating the page
       var hbsObject = { plant: dbp, layout: "plants" };
       return res.render("plants", hbsObject);
+    });
+
+});
+
+// get route -> plants
+router.get("/allplants", function (req, res) {
+
+
+  // .findAll sequelize function
+  db.Plants.findAll({
+    order: [["commonName", "ASC"]]
+  })
+    // use promise method to pass the plants...
+    .then(function (dbp) {
+      res.json(dbp);
     });
 
 });

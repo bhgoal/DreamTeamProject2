@@ -195,4 +195,9 @@ $.get("/allplants", function (req, res) {
 });
 
 /*initiate the autocomplete function on the "myInput" element, and pass along the allplants array as possible autocomplete values:*/
+<<<<<<< HEAD
 autocomplete(document.getElementById("myInput"), allplants);
+=======
+autocomplete(document.getElementById("myInput"), allplants);
+
+>>>>>>> upstream/master

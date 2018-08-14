@@ -70,4 +70,8 @@ $elementList.each(function(index,elem){
   });
 $('#clearSearch').click(function (e){
   $('#cBuscador').val('').keyup();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> upstream/master

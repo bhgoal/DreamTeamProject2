@@ -16,7 +16,7 @@
             </a>
         </li>
         <li>
-            <a href="/sign-out">
+            <a href="/logout">
                 <span>Logout</span>
             </a>
         </li>
@@ -37,9 +37,7 @@
     <div id="findplant"></div>
 
 </div>
-
-
-<div class="section" style="visibility: hidden">
+<div class="section" style="display: none">
     <h2 class="header-plant"> </h2>
     <div class="card horizontal">
         <div class="card-image">
@@ -50,15 +48,9 @@
                 <p class="black-text"></p>
                 <p class="black-text" id="wtrng"></p>
                 <p class="black-text" id="shdtol"></p>
-            </div>
-            <div class="card-action">
-                <div class="row">
-                    <div class="col 1">
-                        <a class="btn-floating btn-large waves-effect waves-light green darken-1 " data-position="top" data-tooltip="Go Home" href="/">
-                            <i class="material-icons">add</i>
-                        </a>
-                    </div>
-                </div>
+
+                <button class="btn-floating" data-position="top" data-tooltip="Go Home" onclick="location.href = '/my-garden'">Add buddy</button>
+                
             </div>
         </div>
     </div>
