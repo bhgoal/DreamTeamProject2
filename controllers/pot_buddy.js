@@ -22,12 +22,13 @@ var pusher = new Pusher({
 // HTML ROUTES
 // get route -> index
 router.get("/", function (req, res) {
-  if (req.user) {
-    return res.render("index");
-  }
+  // if (req.user) {
+  //   return res.render("index");
+  // }
 
-  // send us to the next get function instead.
-  return res.render("login", { layout: "user" });
+  // // send us to the next get function instead.
+  // return res.render("login", { layout: "user" });
+  return res.render("index");
 });
 
 // login
@@ -39,7 +40,7 @@ router.get("/login", function (req, res) {
   return res.render("login", { layout: "user" });
 });
 
-// login
+// sign-up
 router.get("/sign-up", function (req, res) {
   // If the user already has an account send them to the members page
   if (req.user) {
